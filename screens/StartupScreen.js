@@ -9,7 +9,7 @@ import * as authActions from "../store/actions/auth";
 const StartupScreen = (props) => {
     const dispatch = useDispatch();
     useEffect(() => {
-        const tryLogin = async () =>{
+        const tryLogin = async () => {
             const userData = await AsyncStorage.getItem("userData");
             if (!userData) {
                 props.navigation.navigate("Auth")
@@ -23,9 +23,11 @@ const StartupScreen = (props) => {
                 props.navigation.navigate("Auth");
                 return;
             }
+            //this future time - now time
+            const expirationTime = expirationDate.getTime() - new Date().getTime();
 
             props.navigation.navigate("Shop");
-            dispatch(authActions.authenticate(userId , token));
+            dispatch(authActions.authenticate(userId , token , expirationTime));
         }
         
         tryLogin()
