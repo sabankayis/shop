@@ -17,9 +17,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sabankayis.shop",
+      "buildNumber": "1.0.0"
+
+
     },
     "android": {
+      "versionCode":1,
+      "package":"com.sabankayis.shop",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
