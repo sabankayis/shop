@@ -1,3 +1,4 @@
+//Çalışan commit son hal budur.
 import React from "react";
 import {
   createStackNavigator,
