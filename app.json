@@ -1,8 +1,10 @@
 {
   "expo": {
-    "name": "shop",
-    "slug": "shop",
+    "name": "shop-test-app",
+    "slug": "shop-test-app",
     "version": "1.0.0",
+    "description":"Some text",
+    "privacy":"public",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -29,8 +31,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions":[]
     },
+
     "web": {
       "favicon": "./assets/favicon.png"
     }
